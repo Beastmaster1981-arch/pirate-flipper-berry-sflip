@@ -1,0 +1,11 @@
+PIRATE FLIPPER - version web
+1) Envoie tout le dossier (index.html, js, data/, audio/) sur ton hébergement, par ex. /flipper/.
+2) Ouvre https://ton-site/flipper/index.html (HTTP/HTTPS obligatoire, pas file://).
+3) Pour l'intégrer : <iframe src="/flipper/index.html" style="width:100%;height:90vh;border:0" allow="autoplay"></iframe>
+Commandes : flèches ou Z/M = flippers, ESPACE = ressort, ↑ = secousse, P = musique. Mobile : moitiés d'écran + boutons.
+Sons : Jeff Dodson (Dirty Pool Homebrew SFX Kit).
+
+CLASSEMENT EN LIGNE
+- Nécessite PHP sur l'hébergement (scores.php). Le dossier doit être inscriptible : scores.json est créé tout seul.
+- .htaccess (Apache) cache scores.json. Pseudo = 3 lettres/chiffres ; mets NAME_LEN = 10 dans scores.php pour 10.
+- Sans PHP, le jeu fonctionne, seul le classement est indisponible.
